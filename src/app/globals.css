@@ -25,7 +25,7 @@
   --accent-soft: rgba(79, 70, 229, 0.1);
   --accent-foreground: #ffffff;
 
-  --seal: #c2362b;
+  --positive: #16a34a;
 
   --ring: var(--accent);
 }
@@ -47,7 +47,7 @@
   --accent-soft: rgba(94, 106, 210, 0.16);
   --accent-foreground: #0a0a0b;
 
-  --seal: #e34234;
+  --positive: #22c55e;
 
   --ring: var(--accent);
 }
@@ -66,7 +66,7 @@
   --color-accent-hover: var(--accent-hover);
   --color-accent-soft: var(--accent-soft);
   --color-accent-foreground: var(--accent-foreground);
-  --color-seal: var(--seal);
+  --color-positive: var(--positive);
   --color-ring: var(--ring);
 
   --font-display: var(--font-bricolage), ui-sans-serif, system-ui, sans-serif;

@@ -36,8 +36,8 @@ export async function Hero() {
 
           <span className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-border bg-surface/60 px-3 py-1 text-sm text-muted">
             <span className="relative flex size-2">
-              <span className="absolute inline-flex size-full animate-ping rounded-full bg-seal/70" />
-              <span className="relative inline-flex size-2 rounded-full bg-seal" />
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-positive/70" />
+              <span className="relative inline-flex size-2 rounded-full bg-positive" />
             </span>
             {t("status")}
           </span>
