@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Back-end & Full Stack Developer",
+    "description": "Portfolio of Adriano Nishimoto — back-end and full stack developer (C#/.NET, Python, Node/React). REST APIs, Clean Architecture and open-source projects."
+  },
   "nav": {
     "about": "About",
     "work": "Work",
