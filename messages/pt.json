@@ -88,6 +88,33 @@
     "language": "Idioma",
     "skipToContent": "Pular para o conteúdo"
   },
+  "services": {
+    "eyebrow": "Serviços & Processo",
+    "title": "Como eu posso ajudar.",
+    "description": "Aberto a vagas e também a projetos freelance. Estas são as frentes em que eu entrego melhor.",
+    "s1Title": "APIs e back-end",
+    "s1Body": "Modelagem de domínio e APIs REST com autenticação, validação e documentação — em .NET, Django ou Node.",
+    "s2Title": "Aplicações full stack",
+    "s2Body": "Do banco ao browser: React e Next.js na interface, com um back-end que aguenta o tranco.",
+    "s3Title": "Automação e dados",
+    "s3Body": "Python para automatizar processos, integrar sistemas e transformar planilha em dashboard de verdade.",
+    "s4Title": "Integração de IA",
+    "s4Body": "Levo IA generativa para dentro do produto: classificação, geração de conteúdo e agentes que economizam tempo.",
+    "processTitle": "Como eu trabalho",
+    "p1Title": "Entender",
+    "p1Body": "Antes do código, o problema: quem usa, quais regras valem e o que significa dar certo.",
+    "p2Title": "Modelar",
+    "p2Body": "Desenho o domínio e escolho a arquitetura mais simples que resolve — sem over-engineering.",
+    "p3Title": "Construir",
+    "p3Body": "Incrementos pequenos, commits pequenos, código limpo e testável onde importa.",
+    "p4Title": "Entregar",
+    "p4Body": "Deploy, acompanhamento e ajuste. Software que ninguém consegue usar não está pronto."
+  },
+  "github": {
+    "title": "Todo o código, aberto.",
+    "body": "Meus projetos, commits e experimentos ficam públicos. Dá para ver como eu escrevo código de verdade — não só o resultado final.",
+    "cta": "Ver meu GitHub"
+  },
   "contact": {
     "eyebrow": "Contato",
     "title": "Vamos construir algo juntos?",
