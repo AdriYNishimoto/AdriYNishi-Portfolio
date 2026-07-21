@@ -9,7 +9,12 @@
   },
   "hero": {
     "status": "Available for opportunities",
-    "role": "Back-end & Full Stack Developer"
+    "role": "Back-end & Full Stack Developer",
+    "greeting": "Adriano Nishimoto",
+    "headline": "I build the <hl>back-end</hl> that holds the whole experience together.",
+    "subheadline": "Back-end & full stack developer — C#/.NET, Python and Node/React. Clean Architecture, REST APIs, and a track record of learning fast, from first commit to deploy.",
+    "ctaWork": "View work",
+    "ctaContact": "Get in touch"
   },
   "common": {
     "downloadCv": "Download résumé",
