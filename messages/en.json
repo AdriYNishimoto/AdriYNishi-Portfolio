@@ -16,5 +16,18 @@
     "toggleTheme": "Toggle theme",
     "language": "Language",
     "skipToContent": "Skip to content"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "Back-end and full stack development with a focus on clean code and constant growth.",
+    "connect": "Let's talk",
+    "backToTop": "Back to top",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, TypeScript and Tailwind."
   }
 }

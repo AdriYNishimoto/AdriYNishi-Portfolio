@@ -4,6 +4,8 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import { fontDisplay, fontSans, fontMono } from "@/lib/fonts";
 import "../globals.css";
 
@@ -51,7 +53,9 @@ export default async function LocaleLayout({
             >
               {t("skipToContent")}
             </a>
+            <Navbar />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
