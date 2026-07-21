@@ -145,15 +145,15 @@ export const projects: Project[] = [
       pt: "Soft Tech · desafio FIAP",
       en: "Soft Tech · FIAP challenge",
     },
-    stack: ["React", "Vite", "JavaScript", "Google Gemini"],
+    stack: ["React", "Vite", "React Router", "JavaScript"],
     repo: "https://github.com/AdriYNishimoto/Softco_React",
     tagline: {
-      pt: "Plataforma de suporte técnico que usa IA generativa para triar chamados automaticamente.",
-      en: "A technical support platform that uses generative AI to triage tickets automatically.",
+      pt: "Front-end da plataforma de suporte técnico SoftCo, com áreas separadas de usuário e administrador.",
+      en: "Front-end of the SoftCo technical support platform, with separate user and admin areas.",
     },
     solution: {
-      pt: "Front-end em React onde a IA do Google Gemini analisa a requisição do cliente, classifica a complexidade (nível 1 ou 2) e sugere respostas automáticas, reduzindo o tempo de atendimento. Tem áreas separadas para usuário e administrador, com dashboard, tickets, chat e análise.",
-      en: "A React front-end where Google Gemini analyses the customer's request, classifies its complexity (level 1 or 2) and suggests automated replies, cutting response time. It has separate user and admin areas with dashboard, tickets, chat and analytics.",
+      pt: "Desafio da Soft Tech: uma plataforma de suporte cuja proposta é reduzir o tempo de atendimento classificando a complexidade dos chamados. Minha entrega neste repositório é a interface em React — 12 telas roteadas, incluindo login e cadastro, a área do usuário (dashboard, tickets e chat) e o painel administrativo (gestão de chamados, análise e chat do atendente).",
+      en: "A Soft Tech challenge: a support platform meant to cut response time by classifying ticket complexity. What I shipped in this repository is the React interface — 12 routed screens covering sign-in and sign-up, the user area (dashboard, tickets and chat) and the admin panel (ticket management, analysis and agent chat).",
     },
   },
   {
