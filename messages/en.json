@@ -32,6 +32,22 @@
     "factLanguages": "Languages",
     "factLanguagesValue": "Portuguese · English · Spanish · Japanese (basic)"
   },
+  "tech": {
+    "eyebrow": "Tech stack",
+    "title": "The tools I build with.",
+    "description": "The levels below reflect where I actually am today — not where I'd like to be. The list grows fast.",
+    "levelIntermediate": "Intermediate",
+    "levelBasicIntermediate": "Basic/Intermediate",
+    "levelBasic": "Basic",
+    "groupLanguages": "Languages",
+    "groupFrontend": "Front-end",
+    "groupBackend": "Back-end",
+    "groupDatabases": "Databases",
+    "groupArchitecture": "Architecture",
+    "groupDevops": "DevOps & Tools",
+    "groupAi": "Applied AI",
+    "groupData": "Data & Analytics"
+  },
   "common": {
     "downloadCv": "Download résumé",
     "toggleTheme": "Toggle theme",

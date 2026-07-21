@@ -32,6 +32,22 @@
     "factLanguages": "Idiomas",
     "factLanguagesValue": "Português · Inglês · Espanhol · Japonês (básico)"
   },
+  "tech": {
+    "eyebrow": "Tecnologias",
+    "title": "As ferramentas com que eu construo.",
+    "description": "Os níveis abaixo refletem onde eu realmente estou hoje — e não onde eu gostaria de estar. A lista cresce rápido.",
+    "levelIntermediate": "Intermediário",
+    "levelBasicIntermediate": "Básico/Intermediário",
+    "levelBasic": "Básico",
+    "groupLanguages": "Linguagens",
+    "groupFrontend": "Front-end",
+    "groupBackend": "Back-end",
+    "groupDatabases": "Bancos de dados",
+    "groupArchitecture": "Arquitetura",
+    "groupDevops": "DevOps & Ferramentas",
+    "groupAi": "IA aplicada",
+    "groupData": "Dados & Analytics"
+  },
   "common": {
     "downloadCv": "Baixar currículo",
     "toggleTheme": "Alternar tema",
