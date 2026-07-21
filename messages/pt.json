@@ -16,6 +16,22 @@
     "ctaWork": "Ver projetos",
     "ctaContact": "Entrar em contato"
   },
+  "about": {
+    "eyebrow": "Sobre mim",
+    "title": "Do primeiro commit ao deploy — aprendendo rápido no caminho.",
+    "photoAlt": "Adriano Nishimoto, desenvolvedor back-end e full stack",
+    "p1": "Comecei a programar ainda na faculdade e não parei mais. Hoje estou no último ano de Engenharia de Software na FIAP, com formação técnica em Desenvolvimento de Sistemas pelo SENAC Hub Academy e cerca de quatro anos construindo software na prática.",
+    "p2": "Meu foco é back-end: APIs REST, modelagem de domínio e arquitetura limpa. Transito bem pelo ecossistema JavaScript/TypeScript — React, Node e Next.js — e por Python com Django, além de uma base sólida em C# e .NET. Na Rintek atuei como Analista Técnico: automatizei processos com Python, construí dashboards em Power BI e desenvolvi funcionalidades full-stack para sistemas internos.",
+    "p3": "Também trago IA generativa para o fluxo de trabalho — já integrei o Google Gemini em produto e uso agentes de IA no dia a dia para acelerar entregas. Se tem algo que me define, é a velocidade com que aprendo: me dê uma tecnologia nova e eu entrego com ela em prazo curto.",
+    "factLocation": "Localização",
+    "factLocationValue": "Campo Grande, MS — Brasil",
+    "factEducation": "Formação",
+    "factEducationValue": "Eng. de Software · FIAP (último ano)",
+    "factExperience": "Experiência",
+    "factExperienceValue": "~4 anos em desenvolvimento",
+    "factLanguages": "Idiomas",
+    "factLanguagesValue": "Português · Inglês · Espanhol · Japonês (básico)"
+  },
   "common": {
     "downloadCv": "Baixar currículo",
     "toggleTheme": "Alternar tema",

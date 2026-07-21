@@ -16,6 +16,22 @@
     "ctaWork": "View work",
     "ctaContact": "Get in touch"
   },
+  "about": {
+    "eyebrow": "About me",
+    "title": "From first commit to deploy — learning fast along the way.",
+    "photoAlt": "Adriano Nishimoto, back-end and full stack developer",
+    "p1": "I started coding in university and never stopped. Today I'm in my final year of Software Engineering at FIAP, with a technical degree in Systems Development from SENAC Hub Academy and around four years building software in practice.",
+    "p2": "My focus is the back-end: REST APIs, domain modelling and clean architecture. I move comfortably across the JavaScript/TypeScript ecosystem — React, Node and Next.js — and Python with Django, on top of a solid base in C# and .NET. At Rintek I worked as a Technical Analyst: automating processes with Python, building Power BI dashboards and shipping full-stack features for internal systems.",
+    "p3": "I also bring generative AI into the workflow — I've integrated Google Gemini into a product and use AI agents day to day to ship faster. If one thing defines me, it's how quickly I learn: hand me a new technology and I'll deliver with it on a short deadline.",
+    "factLocation": "Location",
+    "factLocationValue": "Campo Grande, MS — Brazil",
+    "factEducation": "Education",
+    "factEducationValue": "Software Engineering · FIAP (final year)",
+    "factExperience": "Experience",
+    "factExperienceValue": "~4 years in development",
+    "factLanguages": "Languages",
+    "factLanguagesValue": "Portuguese · English · Spanish · Japanese (basic)"
+  },
   "common": {
     "downloadCv": "Download résumé",
     "toggleTheme": "Toggle theme",
