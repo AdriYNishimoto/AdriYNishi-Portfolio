@@ -88,6 +88,33 @@
     "language": "Language",
     "skipToContent": "Skip to content"
   },
+  "services": {
+    "eyebrow": "Services & Process",
+    "title": "How I can help.",
+    "description": "Open to roles and to freelance projects. These are the areas where I deliver best.",
+    "s1Title": "APIs and back-end",
+    "s1Body": "Domain modelling and REST APIs with authentication, validation and documentation — in .NET, Django or Node.",
+    "s2Title": "Full stack applications",
+    "s2Body": "From database to browser: React and Next.js on the interface, with a back-end that holds up.",
+    "s3Title": "Automation and data",
+    "s3Body": "Python to automate processes, integrate systems and turn spreadsheets into real dashboards.",
+    "s4Title": "AI integration",
+    "s4Body": "Bringing generative AI into the product: classification, content generation and agents that save time.",
+    "processTitle": "How I work",
+    "p1Title": "Understand",
+    "p1Body": "Before code, the problem: who uses it, which rules apply and what success actually means.",
+    "p2Title": "Model",
+    "p2Body": "I map the domain and pick the simplest architecture that solves it — no over-engineering.",
+    "p3Title": "Build",
+    "p3Body": "Small increments, small commits, clean code and tests where they matter.",
+    "p4Title": "Ship",
+    "p4Body": "Deploy, observe and adjust. Software nobody can use isn't finished."
+  },
+  "github": {
+    "title": "All the code, in the open.",
+    "body": "My projects, commits and experiments are public. You can see how I actually write code — not just the polished result.",
+    "cta": "View my GitHub"
+  },
   "contact": {
     "eyebrow": "Contact",
     "title": "Shall we build something together?",
