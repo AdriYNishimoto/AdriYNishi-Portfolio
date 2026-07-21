@@ -145,15 +145,15 @@ export const projects: Project[] = [
       pt: "Soft Tech · desafio FIAP",
       en: "Soft Tech · FIAP challenge",
     },
-    stack: ["React", "Vite", "React Router", "JavaScript"],
+    stack: ["React", "Vite", "React Router", "Google Gemini"],
     repo: "https://github.com/AdriYNishimoto/Softco_React",
     tagline: {
-      pt: "Front-end da plataforma de suporte técnico SoftCo, com áreas separadas de usuário e administrador.",
-      en: "Front-end of the SoftCo technical support platform, with separate user and admin areas.",
+      pt: "Plataforma de suporte técnico que usa IA generativa para triar chamados e sugerir respostas.",
+      en: "Technical support platform that uses generative AI to triage tickets and suggest replies.",
     },
     solution: {
-      pt: "Desafio da Soft Tech: uma plataforma de suporte cuja proposta é reduzir o tempo de atendimento classificando a complexidade dos chamados. Minha entrega neste repositório é a interface em React — 12 telas roteadas, incluindo login e cadastro, a área do usuário (dashboard, tickets e chat) e o painel administrativo (gestão de chamados, análise e chat do atendente).",
-      en: "A Soft Tech challenge: a support platform meant to cut response time by classifying ticket complexity. What I shipped in this repository is the React interface — 12 routed screens covering sign-in and sign-up, the user area (dashboard, tickets and chat) and the admin panel (ticket management, analysis and agent chat).",
+      pt: "Desafio da Soft Tech. Na tela de análise, o chamado vai para o Google Gemini, que classifica a complexidade em nível 1 (dúvidas e procedimentos padrão) ou nível 2 (falhas técnicas que exigem investigação) e devolve categoria, justificativa e uma resposta pronta para o atendente revisar — reduzindo o tempo de atendimento. A chamada pede resposta em JSON estruturado e fica isolada num único módulo de serviço, justamente para migrar do navegador para um back-end sem tocar na interface. O front tem 12 telas roteadas entre área do usuário e painel administrativo.",
+      en: "A Soft Tech challenge. On the analysis screen the ticket goes to Google Gemini, which classifies complexity as level 1 (usage questions and standard procedures) or level 2 (technical failures needing investigation) and returns a category, a rationale and a ready-to-review reply for the agent — cutting response time. The call requests structured JSON and lives in a single service module, precisely so it can move from the browser to a back-end without touching the UI. The front-end covers 12 routed screens across the user area and admin panel.",
     },
   },
   {
