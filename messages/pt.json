@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "about": "Sobre",
+    "work": "Projetos",
+    "experience": "Experiência",
+    "contact": "Contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "hero": {
+    "status": "Disponível para oportunidades",
+    "role": "Back-end & Full Stack Developer"
+  },
+  "common": {
+    "downloadCv": "Baixar currículo",
+    "toggleTheme": "Alternar tema",
+    "language": "Idioma",
+    "skipToContent": "Pular para o conteúdo"
+  }
+}
