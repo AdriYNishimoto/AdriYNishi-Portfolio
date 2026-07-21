@@ -181,6 +181,7 @@ export const projects: Project[] = [
     team: false,
     stack: ["JavaScript", "Three.js", "WebGL"],
     repo: "https://github.com/AdriYNishimoto/projeto_interacao3D",
+    demo: "https://adriynishimoto.github.io/projeto_interacao3D/",
     tagline: {
       pt: "Visualizador de modelos 3D no navegador, com órbita e controle de iluminação.",
       en: "An in-browser 3D model viewer with orbit controls and live lighting.",
