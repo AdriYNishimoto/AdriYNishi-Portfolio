@@ -19,6 +19,7 @@ export const techGroups: TechGroup[] = [
       { name: "TypeScript", level: "intermediate" },
       { name: "Python", level: "intermediate" },
       { name: "C#", level: "basicIntermediate" },
+      { name: "Lua", level: "basicIntermediate" },
       { name: "SQL", level: "intermediate" },
     ],
   },
@@ -73,6 +74,7 @@ export const techGroups: TechGroup[] = [
       { name: "GitHub", level: "intermediate" },
       { name: "Docker", level: "basic" },
       { name: "Docker Compose", level: "basic" },
+      { name: "Roblox Studio" },
     ],
   },
   {
