@@ -119,23 +119,28 @@ export async function Projects() {
         <Stagger className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {supportingProjects.map((project) => (
             <StaggerItem key={project.slug} className="h-full">
-              <a
-                href={project.repo}
-                target="_blank"
-                rel="noreferrer noopener"
+              <Link
+                href={`/projects/${project.slug}`}
                 className="group flex h-full flex-col rounded-lg border border-border p-5 transition-colors hover:border-border-strong hover:bg-surface"
               >
                 <div className="flex items-start justify-between gap-3">
                   <h4 className="font-medium text-foreground">{project.name}</h4>
-                  <ArrowUpRight className="size-4 shrink-0 text-subtle transition-colors group-hover:text-accent" />
+                  <ArrowRight className="size-4 shrink-0 text-subtle transition-all group-hover:translate-x-0.5 group-hover:text-accent" />
                 </div>
                 <p className="mt-2 text-sm leading-relaxed text-muted">
                   {pick(project.tagline, locale)}
                 </p>
-                <p className="mt-4 font-mono text-[11px] text-subtle">
-                  {project.stack.slice(0, 3).join(" · ")}
-                </p>
-              </a>
+                <div className="mt-auto flex flex-wrap items-center gap-2 pt-4">
+                  {project.demo && (
+                    <span className="rounded-full border border-accent/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-accent">
+                      {t("viewDemo")}
+                    </span>
+                  )}
+                  <span className="font-mono text-[11px] text-subtle">
+                    {project.stack.slice(0, 3).join(" · ")}
+                  </span>
+                </div>
+              </Link>
             </StaggerItem>
           ))}
         </Stagger>
