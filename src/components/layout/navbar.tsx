@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { siteConfig, navItems } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
+import { Logo } from "@/components/brand/logo";
 import { ThemeToggle } from "./theme-toggle";
 import { LocaleToggle } from "./locale-toggle";
 
@@ -44,12 +45,7 @@ export function Navbar() {
           className="group flex items-center gap-2.5"
           aria-label={siteConfig.name}
         >
-          <span
-            className="font-jp text-lg text-foreground transition-colors group-hover:text-accent"
-            lang="ja"
-          >
-            西本
-          </span>
+          <Logo className="size-7 text-foreground transition-colors group-hover:text-accent" />
           <span className="hidden text-sm font-medium text-muted sm:inline">
             {siteConfig.name}
           </span>
