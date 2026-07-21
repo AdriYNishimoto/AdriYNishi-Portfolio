@@ -21,7 +21,7 @@ export async function Contact() {
     <Section id="contact" className="bg-background-muted">
       <Container>
         <SectionHeading
-          index="06"
+          index="07"
           eyebrow={t("eyebrow")}
           title={t("title")}
           description={t("description")}
