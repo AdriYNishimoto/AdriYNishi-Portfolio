@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Tech } from "@/components/sections/tech";
+import { Projects } from "@/components/sections/projects";
 
 export default async function Home({
   params,
@@ -16,6 +17,7 @@ export default async function Home({
       <Hero />
       <About />
       <Tech />
+      <Projects />
     </main>
   );
 }
