@@ -15,7 +15,6 @@ export function LocaleToggle() {
     <button
       type="button"
       onClick={() => router.replace(pathname, { locale: target })}
-      aria-label={`${t("language")}: ${target.toUpperCase()}`}
       className="inline-flex h-10 items-center justify-center gap-1 rounded-md px-2.5 font-mono text-xs font-medium transition-colors hover:bg-surface-2"
     >
       <span className={cn(locale === "pt" ? "text-foreground" : "text-subtle")}>
@@ -24,6 +23,10 @@ export function LocaleToggle() {
       <span className="text-border-strong">/</span>
       <span className={cn(locale === "en" ? "text-foreground" : "text-subtle")}>
         EN
+      </span>
+      {/* Keeps the visible text inside the accessible name (WCAG 2.5.3). */}
+      <span className="sr-only">
+        — {t("language")}: {target.toUpperCase()}
       </span>
     </button>
   );

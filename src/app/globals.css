@@ -40,7 +40,8 @@
 
   --foreground: #ededed;
   --muted: #a1a1aa;
-  --subtle: #71717a;
+  /* 5.4:1+ on every dark surface — small mono labels need AA too. */
+  --subtle: #8a8a93;
 
   --accent: #818cf8;
   --accent-hover: #a5b0ff;
