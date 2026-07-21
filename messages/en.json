@@ -48,6 +48,24 @@
     "groupAi": "Applied AI",
     "groupData": "Data & Analytics"
   },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "What I've built — and why.",
+    "description": "Every project here has a real problem behind it. The source for all of them is on GitHub.",
+    "otherLabel": "Other projects",
+    "team": "Team",
+    "solo": "Solo",
+    "viewCase": "View case",
+    "viewCode": "Code",
+    "viewDemo": "Demo",
+    "problem": "The problem",
+    "solution": "The solution",
+    "contribution": "My contribution",
+    "result": "Result",
+    "stack": "Stack",
+    "backToProjects": "Back to projects",
+    "allOnGithub": "See everything on GitHub"
+  },
   "common": {
     "downloadCv": "Download résumé",
     "toggleTheme": "Toggle theme",

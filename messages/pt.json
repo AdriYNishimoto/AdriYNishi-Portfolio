@@ -48,6 +48,24 @@
     "groupAi": "IA aplicada",
     "groupData": "Dados & Analytics"
   },
+  "projects": {
+    "eyebrow": "Projetos",
+    "title": "O que eu construí — e por quê.",
+    "description": "Cada projeto aqui tem um problema real por trás. Abri o código de todos no GitHub.",
+    "otherLabel": "Outros projetos",
+    "team": "Em equipe",
+    "solo": "Individual",
+    "viewCase": "Ver case",
+    "viewCode": "Código",
+    "viewDemo": "Demo",
+    "problem": "O problema",
+    "solution": "A solução",
+    "contribution": "Minha contribuição",
+    "result": "Resultado",
+    "stack": "Stack",
+    "backToProjects": "Voltar aos projetos",
+    "allOnGithub": "Ver tudo no GitHub"
+  },
   "common": {
     "downloadCv": "Baixar currículo",
     "toggleTheme": "Alternar tema",
