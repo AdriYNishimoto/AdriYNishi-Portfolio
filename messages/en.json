@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "title": "Back-end & Full Stack Developer",
+    "description": "Portfolio of Adriano Nishimoto — back-end and full stack developer (C#/.NET, Python, Node/React). REST APIs, Clean Architecture and open-source projects."
+  },
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "experience": "Experience",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "status": "Available for opportunities",
+    "role": "Back-end & Full Stack Developer",
+    "greeting": "Adriano Nishimoto",
+    "headline": "I build the <hl>back-end</hl> that holds the whole experience together.",
+    "subheadline": "Back-end & full stack developer — C#/.NET, Python and Node/React. Clean Architecture, REST APIs, and a track record of learning fast, from first commit to deploy.",
+    "ctaWork": "View work",
+    "ctaContact": "Get in touch"
+  },
+  "about": {
+    "eyebrow": "About me",
+    "title": "From first commit to deploy — learning fast along the way.",
+    "photoAlt": "Adriano Nishimoto, back-end and full stack developer",
+    "p1": "I started coding in university and never stopped. Today I'm in my final year of Software Engineering at FIAP, with a technical degree in Systems Development from SENAC Hub Academy and around four years building software in practice.",
+    "p2": "My focus is the back-end: REST APIs, domain modelling and clean architecture. I move comfortably across the JavaScript/TypeScript ecosystem — React, Node and Next.js — and Python with Django, on top of a solid base in C# and .NET. At Rintek I worked as a Technical Analyst: automating processes with Python, building Power BI dashboards and shipping full-stack features for internal systems.",
+    "p3": "I also bring generative AI into the workflow — I've integrated Google Gemini into a product and use AI agents day to day to ship faster. If one thing defines me, it's how quickly I learn: hand me a new technology and I'll deliver with it on a short deadline.",
+    "factLocation": "Location",
+    "factLocationValue": "Campo Grande, MS — Brazil",
+    "factEducation": "Education",
+    "factEducationValue": "Software Engineering · FIAP (final year)",
+    "factExperience": "Experience",
+    "factExperienceValue": "~4 years in development",
+    "factLanguages": "Languages",
+    "factLanguagesValue": "Portuguese · English · Spanish · Japanese (basic)"
+  },
+  "tech": {
+    "eyebrow": "Tech stack",
+    "title": "The tools I build with.",
+    "description": "The levels below reflect where I actually am today — not where I'd like to be. The list grows fast.",
+    "levelIntermediate": "Intermediate",
+    "levelBasicIntermediate": "Basic/Intermediate",
+    "levelBasic": "Basic",
+    "groupLanguages": "Languages",
+    "groupFrontend": "Front-end",
+    "groupBackend": "Back-end",
+    "groupDatabases": "Databases",
+    "groupArchitecture": "Architecture",
+    "groupDevops": "DevOps & Tools",
+    "groupAi": "Applied AI",
+    "groupData": "Data & Analytics"
+  },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "What I've built — and why.",
+    "description": "Every project here has a real problem behind it. The source for all of them is on GitHub.",
+    "otherLabel": "Other projects",
+    "team": "Team",
+    "solo": "Solo",
+    "viewCase": "View case",
+    "viewCode": "Code",
+    "viewDemo": "Demo",
+    "problem": "The problem",
+    "solution": "The solution",
+    "contribution": "My contribution",
+    "result": "Result",
+    "stack": "Stack",
+    "backToProjects": "Back to projects",
+    "allOnGithub": "See everything on GitHub"
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Where I put all of this into practice.",
+    "challengesTitle": "Challenges with companies",
+    "challengesDescription": "Projects delivered with real sponsor companies during my degree."
+  },
+  "education": {
+    "eyebrow": "Education & Certifications",
+    "title": "I study by choice, not by obligation.",
+    "educationLabel": "Education",
+    "certificationsLabel": "Certifications"
+  },
+  "common": {
+    "downloadCv": "Download résumé",
+    "toggleTheme": "Toggle theme",
+    "language": "Language",
+    "skipToContent": "Skip to content"
+  },
+  "services": {
+    "eyebrow": "Services & Process",
+    "title": "How I can help.",
+    "description": "Open to roles and to freelance projects. These are the areas where I deliver best.",
+    "s1Title": "APIs and back-end",
+    "s1Body": "Domain modelling and REST APIs with authentication, validation and documentation — in .NET, Django or Node.",
+    "s2Title": "Full stack applications",
+    "s2Body": "From database to browser: React and Next.js on the interface, with a back-end that holds up.",
+    "s3Title": "Automation and data",
+    "s3Body": "Python to automate processes, integrate systems and turn spreadsheets into real dashboards.",
+    "s4Title": "AI integration",
+    "s4Body": "Bringing generative AI into the product: classification, content generation and agents that save time.",
+    "processTitle": "How I work",
+    "p1Title": "Understand",
+    "p1Body": "Before code, the problem: who uses it, which rules apply and what success actually means.",
+    "p2Title": "Model",
+    "p2Body": "I map the domain and pick the simplest architecture that solves it — no over-engineering.",
+    "p3Title": "Build",
+    "p3Body": "Small increments, small commits, clean code and tests where they matter.",
+    "p4Title": "Ship",
+    "p4Body": "Deploy, observe and adjust. Software nobody can use isn't finished."
+  },
+  "github": {
+    "title": "All the code, in the open.",
+    "body": "My projects, commits and experiments are public. You can see how I actually write code — not just the polished result.",
+    "cta": "View my GitHub"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Shall we build something together?",
+    "description": "I'm open to back-end and full stack roles, and to freelance projects too. I usually reply quickly.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone / WhatsApp",
+    "subject": "Subject",
+    "message": "Message",
+    "optional": "optional",
+    "send": "Send message",
+    "sending": "Sending…",
+    "successTitle": "Message sent!",
+    "successBody": "Thanks for reaching out — I'll reply to your email shortly.",
+    "sendAnother": "Send another message",
+    "errorGeneric": "I couldn't send it right now. Try again in a moment, or email me directly.",
+    "errorRateLimited": "Too many attempts in a row. Please wait a minute and try again.",
+    "errorValidation": "Please check the highlighted fields below.",
+    "invalidField": "Please check this field.",
+    "orReach": "Or reach me directly",
+    "placeholderName": "What should I call you?",
+    "placeholderEmail": "you@company.com",
+    "placeholderCompany": "Where you work",
+    "placeholderPhone": "+55 67 99999-9999",
+    "placeholderSubject": "What would you like to talk about?",
+    "placeholderMessage": "Tell me a bit about what you need…"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "whatsapp": "WhatsApp"
+  },
+  "footer": {
+    "tagline": "Back-end and full stack development with a focus on clean code and constant growth.",
+    "connect": "Let's talk",
+    "backToTop": "Back to top",
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, TypeScript and Tailwind."
+  }
+}
