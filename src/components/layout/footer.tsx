@@ -1,8 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ArrowRight, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons";
-import { Seal } from "@/components/decor/seal";
-import { Logo } from "@/components/brand/logo";
 import { siteConfig } from "@/config/site";
 import { Container } from "./section";
 
@@ -23,11 +21,10 @@ export async function Footer() {
       <Container className="py-16">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <div className="flex items-center gap-3">
-              <Logo className="size-9 text-foreground" />
-              <Seal />
-            </div>
-            <p className="mt-4 text-sm leading-relaxed text-muted">
+            <p className="font-display text-lg font-semibold text-foreground">
+              {siteConfig.name}
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
               {t("tagline")}
             </p>
           </div>

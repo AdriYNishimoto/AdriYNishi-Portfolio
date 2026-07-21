@@ -2,7 +2,6 @@ import { getLocale, getTranslations } from "next-intl/server";
 import { ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { Container } from "@/components/layout/section";
-import { Logo } from "@/components/brand/logo";
 import { Enso } from "@/components/decor/enso";
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
@@ -33,11 +32,7 @@ export async function Hero() {
 
       <Container>
         <div className="max-w-3xl">
-          <p className="flex items-center gap-2.5 font-mono text-sm text-muted">
-            <Logo className="size-5 text-foreground" />
-            <span className="text-border-strong">·</span>
-            {t("role")}
-          </p>
+          <p className="font-mono text-sm text-muted">{t("role")}</p>
 
           <span className="mt-6 inline-flex items-center gap-2.5 rounded-full border border-border bg-surface/60 px-3 py-1 text-sm text-muted">
             <span className="relative flex size-2">
