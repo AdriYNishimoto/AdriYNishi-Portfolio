@@ -66,6 +66,18 @@
     "backToProjects": "Voltar aos projetos",
     "allOnGithub": "Ver tudo no GitHub"
   },
+  "experience": {
+    "eyebrow": "Experiência",
+    "title": "Onde eu coloquei tudo isso em prática.",
+    "challengesTitle": "Desafios com empresas",
+    "challengesDescription": "Projetos entregues em parceria com empresas reais durante a graduação."
+  },
+  "education": {
+    "eyebrow": "Formação & Certificações",
+    "title": "Estudo por escolha, não por obrigação.",
+    "educationLabel": "Formação",
+    "certificationsLabel": "Certificações"
+  },
   "common": {
     "downloadCv": "Baixar currículo",
     "toggleTheme": "Alternar tema",

@@ -3,6 +3,8 @@ import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Tech } from "@/components/sections/tech";
 import { Projects } from "@/components/sections/projects";
+import { Experience } from "@/components/sections/experience";
+import { Education } from "@/components/sections/education";
 
 export default async function Home({
   params,
@@ -18,6 +20,8 @@ export default async function Home({
       <About />
       <Tech />
       <Projects />
+      <Experience />
+      <Education />
     </main>
   );
 }
