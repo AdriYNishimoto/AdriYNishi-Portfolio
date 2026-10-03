@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: `${siteConfig.name} — ${siteConfig.role}`,
     short_name: siteConfig.name,
     description:
-      "Portfólio de Adriano Nishimoto, desenvolvedor back-end e full stack.",
+      "Portfólio de Adriano Nishimoto, estudante de Engenharia de Software com foco em desenvolvimento back-end.",
     start_url: "/",
     display: "standalone",
     background_color: "#0a0a0b",

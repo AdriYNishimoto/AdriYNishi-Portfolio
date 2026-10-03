@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Adriano Nishimoto",
   shortName: "Adriano Nishimoto",
   kanji: "西本",
-  role: "Back-end & Full Stack Developer",
+  role: "Desenvolvedor em início de carreira · Back-end",
   email: "dev.adrianonishimoto@gmail.com",
   location: "Campo Grande, MS — Brasil",
   photo: "/adriano.webp",
@@ -13,7 +13,7 @@ export const siteConfig = {
   },
   cv: {
     pt: "/cv/adriano-nishimoto-cv-pt.pdf",
-    en: "/cv/adriano-nishimoto-cv-en.pdf",
+    en: "/cv/adriano-nishimoto-cv-pt.pdf",
   },
 } as const;
 

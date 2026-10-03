@@ -1,13 +1,10 @@
-/**
- * Stack grouped by area. Levels mirror what the CV states — no inflation.
- * Group titles and level labels are translated in messages/{locale}.json.
- */
+/** Levels are shown only where the supplied résumé explicitly gives one. */
 export type TechLevel = "intermediate" | "basicIntermediate" | "basic";
 
 export type TechGroup = {
   id: string;
-  icon: "braces" | "code" | "server" | "database" | "architecture" | "devops" | "ai" | "data";
-  items: { name: string; level?: TechLevel }[];
+  icon: "braces" | "code" | "server" | "database" | "tools" | "practices";
+  items: { name: string; level?: TechLevel; labelKey?: string }[];
 };
 
 export const techGroups: TechGroup[] = [
@@ -15,86 +12,59 @@ export const techGroups: TechGroup[] = [
     id: "languages",
     icon: "braces",
     items: [
-      { name: "JavaScript", level: "intermediate" },
-      { name: "TypeScript", level: "intermediate" },
       { name: "Python", level: "intermediate" },
-      { name: "C#", level: "basicIntermediate" },
-      { name: "Lua", level: "basicIntermediate" },
-      { name: "SQL", level: "intermediate" },
-    ],
-  },
-  {
-    id: "frontend",
-    icon: "code",
-    items: [
-      { name: "React", level: "intermediate" },
-      { name: "Next.js", level: "basic" },
-      { name: "HTML", level: "intermediate" },
-      { name: "CSS", level: "intermediate" },
+      { name: "C# / .NET", level: "basicIntermediate" },
+      { name: "JavaScript", level: "basic" },
+      { name: "TypeScript", level: "basic" },
     ],
   },
   {
     id: "backend",
     icon: "server",
     items: [
-      { name: "Django", level: "intermediate" },
-      { name: ".NET", level: "basicIntermediate" },
-      { name: "Node.js", level: "basic" },
-      { name: "NestJS", level: "basic" },
+      { name: "FastAPI" },
+      { name: "Django" },
       { name: "ASP.NET Core" },
-      { name: "Django REST Framework" },
+      { name: "Entity Framework" },
+      { name: "Node.js" },
     ],
+  },
+  {
+    id: "frontend",
+    icon: "code",
+    items: [{ name: "React" }, { name: "HTML" }, { name: "CSS" }],
   },
   {
     id: "databases",
     icon: "database",
     items: [
-      { name: "PostgreSQL", level: "intermediate" },
-      { name: "SQL Server", level: "intermediate" },
-      { name: "MySQL", level: "intermediate" },
-      { name: "SQLite" },
+      { name: "SQL" },
+      { name: "PostgreSQL" },
+      { name: "MySQL" },
+      { name: "NoSQL" },
+      { name: "Supabase" },
     ],
   },
   {
-    id: "architecture",
-    icon: "architecture",
+    id: "tools",
+    icon: "tools",
     items: [
-      { name: "APIs RESTful" },
-      { name: "Clean Architecture" },
-      { name: "SOLID" },
-      { name: "Design Patterns" },
-      { name: "Microsserviços" },
+      { name: "Git / GitHub" },
+      { name: "Postman" },
+      { name: "Vercel" },
+      { name: "Render" },
     ],
   },
   {
-    id: "devops",
-    icon: "devops",
+    id: "practices",
+    icon: "practices",
     items: [
-      { name: "Git", level: "intermediate" },
-      { name: "GitHub", level: "intermediate" },
-      { name: "Docker", level: "basic" },
-      { name: "Docker Compose", level: "basic" },
-      { name: "Roblox Studio" },
-    ],
-  },
-  {
-    id: "ai",
-    icon: "ai",
-    items: [
-      { name: "Google Gemini" },
-      { name: "Claude Code" },
-      { name: "Agentes de IA" },
-    ],
-  },
-  {
-    id: "data",
-    icon: "data",
-    items: [
-      { name: "pandas" },
-      { name: "numpy" },
-      { name: "Power BI (DAX)" },
-      { name: "Power Automate" },
-      { name: "n8n" },
+      { name: "REST APIs", labelKey: "practiceRest" },
+      { name: "CRUD" },
+      { name: "Authentication", labelKey: "practiceAuth" },
+      { name: "Scrum / Kanban" },
+      { name: "Gemini API", labelKey: "practiceGemini" },
+      { name: "AI-assisted development", labelKey: "practiceAi" },
     ],
   },
 ];

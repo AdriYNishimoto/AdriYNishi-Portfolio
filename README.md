@@ -1,7 +1,7 @@
 # Portfólio — Adriano Nishimoto
 
-Portfólio pessoal de [Adriano Nishimoto](https://github.com/AdriYNishimoto), desenvolvedor
-back-end e full stack. Site bilíngue (PT/EN), com tema claro/escuro, formulário de contato
+Portfólio pessoal de [Adriano Nishimoto](https://github.com/AdriYNishimoto), estudante de
+Engenharia de Software com foco em back-end. Site bilíngue (PT/EN), com tema claro/escuro, formulário de contato
 funcional e páginas de case study para cada projeto.
 
 ## Stack
@@ -84,16 +84,17 @@ Quase tudo está separado do código:
 
 | O que | Onde |
 | --- | --- |
-| Currículos (PT/EN) | `public/cv/` — troque os PDFs mantendo os nomes |
+| Currículo | `public/cv/adriano-nishimoto-cv-pt.pdf` — PDF atualizado em português |
 | Foto | `public/adriano.webp` |
 | Links, e-mail, WhatsApp | `src/config/site.ts` |
 | Projetos e case studies | `src/content/projects.ts` |
-| Experiência, formação, certificações | `src/content/career.ts` |
+| Experiência e formação | `src/content/career.ts` |
 | Stack e níveis | `src/content/tech.ts` |
 | Textos da interface | `messages/pt.json` e `messages/en.json` |
 
-O botão de download do currículo respeita o idioma do site: `/pt` baixa o PDF em português,
-`/en` baixa o em inglês.
+O botão de download usa o currículo atualizado em português nas duas versões do site.
+Na versão em inglês, o botão informa o idioma do arquivo. Os caminhos ficam em
+`src/config/site.ts`; os demais PDFs em `public/cv/` são versões anteriores, sem link na interface.
 
 ## Estrutura
 

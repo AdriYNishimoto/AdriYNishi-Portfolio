@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Desenvolvedor Back-end & Full Stack",
-    "description": "Portfólio de Adriano Nishimoto — desenvolvedor back-end e full stack (C#/.NET, Python, Node/React). APIs REST, Clean Architecture e projetos com código aberto."
+    "title": "Desenvolvedor com foco em Back-end",
+    "description": "Portfólio de Adriano Nishimoto, estudante de Engenharia de Software com foco em back-end. Projetos, formação e experiências com Python, C#/.NET e React."
   },
   "nav": {
     "about": "Sobre",
@@ -13,33 +13,33 @@
   },
   "hero": {
     "status": "Disponível para oportunidades",
-    "role": "Back-end & Full Stack Developer",
+    "role": "Desenvolvedor em início de carreira",
     "greeting": "Adriano Nishimoto",
-    "headline": "Construo o <hl>back-end</hl> que sustenta a experiência de ponta a ponta.",
-    "subheadline": "Desenvolvedor back-end & full stack — C#/.NET, Python e Node/React. Clean Architecture, APIs REST e um histórico de evolução rápida, do primeiro commit ao deploy.",
+    "headline": "Meu foco é <hl>back-end</hl>. Meu caminho é aprender na prática.",
+    "subheadline": "Estudante de Engenharia de Software na FIAP e técnico em Desenvolvimento de Sistemas. Desenvolvo minha base em Python e C#/.NET, com experiências em projetos web e suporte técnico.",
     "ctaWork": "Ver projetos",
     "ctaContact": "Entrar em contato"
   },
   "about": {
     "eyebrow": "Sobre mim",
-    "title": "Do primeiro commit ao deploy — aprendendo rápido no caminho.",
-    "photoAlt": "Adriano Nishimoto, desenvolvedor back-end e full stack",
-    "p1": "Comecei a programar ainda na faculdade e não parei mais. Hoje estou no último ano de Engenharia de Software na FIAP, com formação técnica em Desenvolvimento de Sistemas pelo SENAC Hub Academy e cerca de quatro anos construindo software na prática.",
-    "p2": "Meu foco é back-end: APIs REST, modelagem de domínio e arquitetura limpa. Transito bem pelo ecossistema JavaScript/TypeScript — React, Node e Next.js — e por Python com Django, além de uma base sólida em C# e .NET. Na Rintek atuei como Analista Técnico: automatizei processos com Python, construí dashboards em Power BI e desenvolvi funcionalidades full-stack para sistemas internos.",
-    "p3": "Também trago IA generativa para o fluxo de trabalho — já integrei o Google Gemini em produto e uso agentes de IA no dia a dia para acelerar entregas. Se tem algo que me define, é a velocidade com que aprendo: me dê uma tecnologia nova e eu entrego com ela em prazo curto.",
+    "title": "Minha trajetória até aqui.",
+    "photoAlt": "Adriano Nishimoto, estudante de Engenharia de Software",
+    "p1": "Sou Adriano Yudi Ribas Nishimoto, estudante do último semestre de Engenharia de Software na FIAP, com conclusão prevista para dezembro de 2026. Também concluí o curso técnico em Desenvolvimento de Sistemas no Senac Hub Academy, em novembro de 2025.",
+    "p2": "Tenho interesse em desenvolvimento back-end, especialmente APIs REST, operações CRUD, autenticação e bancos de dados. Na RINTEK, participei do desenvolvimento de uma plataforma jurídica com IA, usando Python, React e Supabase. No SAE+C, atuei com suporte técnico e apoio à implantação do sistema de gestão escolar Mhund.",
+    "p3": "Nos projetos pessoais e acadêmicos, pratico programação e trabalho em equipe. Minha base é intermediária em Python, básica a intermediária em C#/.NET e básica em JavaScript/TypeScript. Busco oportunidades para contribuir, aprender com a equipe e ganhar experiência.",
     "factLocation": "Localização",
     "factLocationValue": "Campo Grande, MS — Brasil",
     "factEducation": "Formação",
-    "factEducationValue": "Eng. de Software · FIAP (último ano)",
+    "factEducationValue": "Eng. de Software · FIAP (último semestre)",
     "factExperience": "Experiência",
-    "factExperienceValue": "~4 anos em desenvolvimento",
+    "factExperienceValue": "Desenvolvimento e suporte técnico",
     "factLanguages": "Idiomas",
-    "factLanguagesValue": "Português · Inglês · Espanhol · Japonês (básico)"
+    "factLanguagesValue": "Português nativo · Espanhol intermediário · Inglês básico (leitura e compreensão: básico a intermediário) · Japonês básico (nível N5 informado)"
   },
   "tech": {
     "eyebrow": "Tecnologias",
-    "title": "As ferramentas com que eu construo.",
-    "description": "Os níveis abaixo refletem onde eu realmente estou hoje — e não onde eu gostaria de estar. A lista cresce rápido.",
+    "title": "O que venho colocando em prática.",
+    "description": "Tecnologias e práticas presentes nos meus estudos, projetos e experiências. Os níveis indicados correspondem à minha base atual nas linguagens.",
     "levelIntermediate": "Intermediário",
     "levelBasicIntermediate": "Básico/Intermediário",
     "levelBasic": "Básico",
@@ -47,19 +47,21 @@
     "groupFrontend": "Front-end",
     "groupBackend": "Back-end",
     "groupDatabases": "Bancos de dados",
-    "groupArchitecture": "Arquitetura",
-    "groupDevops": "DevOps & Ferramentas",
-    "groupAi": "IA aplicada",
-    "groupData": "Dados & Analytics"
+    "groupTools": "Ferramentas",
+    "groupPractices": "Práticas e integrações",
+    "practiceRest": "APIs REST",
+    "practiceAuth": "Autenticação",
+    "practiceGemini": "Integração com Gemini",
+    "practiceAi": "Desenvolvimento assistido por IA"
   },
   "projects": {
     "eyebrow": "Projetos",
-    "title": "O que eu construí — e por quê.",
-    "description": "Cada projeto aqui tem um problema real por trás. Abri o código de todos no GitHub.",
+    "title": "Projetos e aprendizados.",
+    "description": "Uma seleção de projetos pessoais e acadêmicos, com as tecnologias utilizadas e minha participação em cada um.",
     "otherLabel": "Outros projetos",
     "team": "Em equipe",
     "solo": "Individual",
-    "viewCase": "Ver case",
+    "viewCase": "Ver projeto",
     "viewCode": "Código",
     "viewDemo": "Demo",
     "problem": "O problema",
@@ -68,17 +70,17 @@
     "result": "Resultado",
     "stack": "Stack",
     "backToProjects": "Voltar aos projetos",
-    "allOnGithub": "Ver tudo no GitHub"
+    "allOnGithub": "Ver mais no GitHub"
   },
   "experience": {
     "eyebrow": "Experiência",
-    "title": "Onde eu coloquei tudo isso em prática.",
+    "title": "Minhas experiências profissionais.",
     "challengesTitle": "Desafios com empresas",
-    "challengesDescription": "Projetos entregues em parceria com empresas reais durante a graduação."
+    "challengesDescription": "Projetos acadêmicos desenvolvidos durante a graduação."
   },
   "education": {
-    "eyebrow": "Formação & Certificações",
-    "title": "Estudo por escolha, não por obrigação.",
+    "eyebrow": "Formação",
+    "title": "Meu percurso de formação.",
     "educationLabel": "Formação",
     "certificationsLabel": "Certificações"
   },
@@ -89,36 +91,36 @@
     "skipToContent": "Pular para o conteúdo"
   },
   "services": {
-    "eyebrow": "Serviços & Processo",
+    "eyebrow": "Como posso contribuir",
     "title": "Como eu posso ajudar.",
-    "description": "Aberto a vagas e também a projetos freelance. Estas são as frentes em que eu entrego melhor.",
+    "description": "Quero contribuir em projetos de desenvolvimento e continuar aprendendo com a equipe. Estas são algumas atividades com as quais já tive contato.",
     "s1Title": "APIs e back-end",
-    "s1Body": "Modelagem de domínio e APIs REST com autenticação, validação e documentação — em .NET, Django ou Node.",
-    "s2Title": "Aplicações full stack",
-    "s2Body": "Do banco ao browser: React e Next.js na interface, com um back-end que aguenta o tranco.",
-    "s3Title": "Automação e dados",
-    "s3Body": "Python para automatizar processos, integrar sistemas e transformar planilha em dashboard de verdade.",
+    "s1Body": "Apoio na criação de APIs REST com operações CRUD, validações, autenticação e acesso a bancos de dados.",
+    "s2Title": "Interfaces com React",
+    "s2Body": "Desenvolvimento de telas e conexão com APIs, a partir da experiência em projetos acadêmicos e na RINTEK.",
+    "s3Title": "Suporte e testes",
+    "s3Body": "Apoio ao uso de sistemas, identificação de problemas e verificação de funcionalidades.",
     "s4Title": "Integração de IA",
-    "s4Body": "Levo IA generativa para dentro do produto: classificação, geração de conteúdo e agentes que economizam tempo.",
+    "s4Body": "Apoio em integrações com a API do Gemini, a partir da experiência na plataforma jurídica da RINTEK.",
     "processTitle": "Como eu trabalho",
     "p1Title": "Entender",
-    "p1Body": "Antes do código, o problema: quem usa, quais regras valem e o que significa dar certo.",
-    "p2Title": "Modelar",
-    "p2Body": "Desenho o domínio e escolho a arquitetura mais simples que resolve — sem over-engineering.",
+    "p1Body": "Procuro entender a necessidade, as regras e as dúvidas antes de começar.",
+    "p2Title": "Planejar",
+    "p2Body": "Alinho o que precisa ser feito com a equipe e divido o trabalho em etapas.",
     "p3Title": "Construir",
-    "p3Body": "Incrementos pequenos, commits pequenos, código limpo e testável onde importa.",
-    "p4Title": "Entregar",
-    "p4Body": "Deploy, acompanhamento e ajuste. Software que ninguém consegue usar não está pronto."
+    "p3Body": "Implemento aos poucos, consulto a documentação e peço orientação quando necessário.",
+    "p4Title": "Revisar",
+    "p4Body": "Verifico o funcionamento, acolho sugestões e faço os ajustes com a equipe."
   },
   "github": {
-    "title": "Todo o código, aberto.",
-    "body": "Meus projetos, commits e experimentos ficam públicos. Dá para ver como eu escrevo código de verdade — não só o resultado final.",
+    "title": "Mais projetos no GitHub.",
+    "body": "Compartilho repositórios de estudos, projetos e experimentos que fazem parte do meu aprendizado.",
     "cta": "Ver meu GitHub"
   },
   "contact": {
     "eyebrow": "Contato",
     "title": "Vamos construir algo juntos?",
-    "description": "Estou aberto a oportunidades como desenvolvedor back-end e full stack, e também a projetos freelance. Costumo responder rápido.",
+    "description": "Busco oportunidades em desenvolvimento de software, com foco em back-end. Se meu perfil fizer sentido para sua equipe ou projeto, vamos conversar.",
     "name": "Nome",
     "email": "E-mail",
     "company": "Empresa",
@@ -150,7 +152,7 @@
     "whatsapp": "WhatsApp"
   },
   "footer": {
-    "tagline": "Desenvolvimento back-end e full stack com foco em código limpo e evolução constante.",
+    "tagline": "Desenvolvimento de software com foco em back-end e aprendizado na prática.",
     "connect": "Vamos conversar",
     "backToTop": "Voltar ao topo",
     "rights": "Todos os direitos reservados.",

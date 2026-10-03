@@ -1,7 +1,7 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import { Container, Section, SectionHeading } from "@/components/layout/section";
-import { Reveal, Stagger, StaggerItem } from "@/components/motion/reveal";
-import { challenges, jobs, pick } from "@/content/career";
+import { Reveal } from "@/components/motion/reveal";
+import { jobs, pick } from "@/content/career";
 
 export async function Experience() {
   const t = await getTranslations("experience");
@@ -22,8 +22,6 @@ export async function Experience() {
               <Reveal y={12}>
                 <p className="font-mono text-xs text-subtle">
                   <span className="tabular">{pick(job.period, locale)}</span>
-                  <span aria-hidden> · </span>
-                  {job.location}
                 </p>
                 <h3 className="mt-2 text-lg font-semibold text-foreground">
                   {pick(job.role, locale)}
@@ -44,35 +42,6 @@ export async function Experience() {
           ))}
         </ol>
 
-        <div className="mt-20">
-          <h3 className="font-mono text-xs uppercase tracking-[0.2em] text-subtle">
-            {t("challengesTitle")}
-          </h3>
-          <p className="mt-3 max-w-xl text-sm text-muted">
-            {t("challengesDescription")}
-          </p>
-
-          <Stagger className="mt-8 grid gap-4 md:grid-cols-3">
-            {challenges.map((challenge) => (
-              <StaggerItem key={challenge.name} className="h-full">
-                <div className="h-full rounded-lg border border-border bg-surface p-5">
-                  <p className="font-mono text-xs text-accent">
-                    {challenge.company}
-                  </p>
-                  <h4 className="mt-2 font-medium text-foreground">
-                    {challenge.name}
-                  </h4>
-                  <p className="mt-2.5 text-sm leading-relaxed text-muted">
-                    {pick(challenge.description, locale)}
-                  </p>
-                  <p className="mt-4 font-mono text-[11px] text-subtle">
-                    {challenge.stack.join(" · ")}
-                  </p>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
-        </div>
       </Container>
     </Section>
   );

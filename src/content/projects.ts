@@ -8,7 +8,7 @@ export type Project = {
   featured: boolean;
   year: string;
   team: boolean;
-  /** Where the project came from — company, challenge, course. */
+  /** Where the project came from and, when relevant, its current status. */
   context?: Localized;
   stack: string[];
   repo?: string;
@@ -16,7 +16,7 @@ export type Project = {
   tagline: Localized;
   problem?: Localized;
   solution?: Localized;
-  /** What I personally shipped — only meaningful on team projects. */
+  /** Personal contribution to a team project. */
   contribution?: Localized;
   result?: Localized;
 };
@@ -27,84 +27,114 @@ export function t(value: Localized, locale: string) {
 
 export const projects: Project[] = [
   {
-    slug: "merchantflow",
-    name: "MerchantFlow",
-    featured: true,
-    year: "2026",
-    team: false,
-    stack: ["Python", "Django", "Django REST Framework", "SQLite", "Testes"],
-    repo: "https://github.com/AdriYNishimoto/MerchantFlow",
-    tagline: {
-      pt: "API de cadastro e análise de estabelecimentos com o fluxo modelado como máquina de estados.",
-      en: "Merchant onboarding API with the review flow modelled as an explicit state machine.",
-    },
-    problem: {
-      pt: "Cadastro com aprovação costuma virar um CRUD onde qualquer status vira qualquer outro e o histórico se perde. O resultado é dado inconsistente e nenhuma rastreabilidade de quem aprovou o quê, e quando.",
-      en: "Approval flows tend to end up as a plain CRUD where any status can jump to any other and history is lost. That means inconsistent data and no traceability of who approved what, and when.",
-    },
-    solution: {
-      pt: "Modelei o ciclo de vida do merchant como uma máquina de estados explícita (rascunho → em análise → aprovado / rejeitado → bloqueado). Cada transição é validada no domínio e grava um evento imutável na mesma transação do banco, então status e histórico nunca saem de sincronia. Transições inválidas respondem HTTP 409 e os dados cadastrais só podem ser editados enquanto o merchant está em rascunho.",
-      en: "I modelled the merchant lifecycle as an explicit state machine (draft → pending analysis → approved / rejected → blocked). Every transition is validated in the domain and writes an immutable event inside the same database transaction, so status and history can never drift apart. Invalid transitions answer with HTTP 409, and registration data can only be edited while the merchant is still a draft.",
-    },
-    result: {
-      pt: "Histórico completo e auditável de cada mudança, com regras de negócio que a API não deixa burlar. Cobri o domínio com testes de modelos, validadores e endpoints.",
-      en: "A complete, auditable history of every change, with business rules the API simply won't let you bypass. I covered the domain with model, validator and endpoint tests.",
-    },
-  },
-  {
-    slug: "api-produtos",
-    name: "ApiProdutos",
-    featured: true,
-    year: "2025",
-    team: false,
-    stack: ["C#", ".NET 8", "ASP.NET Core", "EF Core 8", "SQL Server", "JWT", "Swagger"],
-    repo: "https://github.com/AdriYNishimoto/ApiProdutos",
-    tagline: {
-      pt: "API RESTful em .NET 8 com autenticação JWT, tratamento de erros centralizado e documentação viva.",
-      en: "A .NET 8 REST API with JWT authentication, centralised error handling and living documentation.",
-    },
-    problem: {
-      pt: "Eu queria uma referência própria de como se constrói uma API .NET de verdade — não o CRUD de tutorial, mas algo com autenticação, erros padronizados e documentação que outra pessoa conseguisse usar.",
-      en: "I wanted my own reference for how a real .NET API is built — not the tutorial CRUD, but something with authentication, standardised errors and documentation another developer could actually use.",
-    },
-    solution: {
-      pt: "Construí a API em ASP.NET Core 8 com Entity Framework Core e Migrations versionando o schema. Protegi os endpoints com JWT, escrevi um middleware que centraliza o tratamento de exceções e devolve respostas padronizadas, adicionei validação por Data Annotations, logging estruturado e documentei tudo com Swagger/OpenAPI.",
-      en: "I built the API on ASP.NET Core 8 with Entity Framework Core and Migrations versioning the schema. Endpoints are protected with JWT, a custom middleware centralises exception handling and returns standardised responses, plus Data Annotations validation, structured logging and full Swagger/OpenAPI documentation.",
-    },
-    result: {
-      pt: "Uma base reutilizável para APIs .NET: injeção de dependência, responsabilidades separadas e endpoints protegidos, prontos para testar direto no Swagger.",
-      en: "A reusable baseline for .NET APIs: dependency injection, clear separation of concerns and protected endpoints you can exercise straight from Swagger.",
-    },
-  },
-  {
     slug: "sistema-cadastral",
     name: "SistemaCadastral",
     featured: true,
     year: "2025",
     team: false,
-    stack: ["C#", ".NET", "ASP.NET Core", "EF Core", "Repository", "SOLID"],
+    context: { pt: "Projeto pessoal", en: "Personal project" },
+    stack: ["C#", "ASP.NET Core", "Entity Framework", "NoSQL"],
     repo: "https://github.com/AdriYNishimoto/SistemaCadastral",
     tagline: {
-      pt: "Cadastro de pessoas e cidades em camadas — Controller, Service e Repository atrás de interfaces.",
-      en: "A people and cities registry built in layers — Controller, Service and Repository behind interfaces.",
-    },
-    problem: {
-      pt: "Um cadastro é simples no papel, mas vira um emaranhado quando a regra de negócio mora dentro do controller: nada é testável isoladamente e trocar o acesso a dados obriga a mexer em tudo.",
-      en: "A registry looks simple on paper, but turns into a tangle once business rules live inside the controller: nothing can be tested in isolation and swapping the data layer means touching everything.",
+      pt: "API para cadastro de pessoas e cidades, com operações CRUD e validação de CPF e CNPJ.",
+      en: "An API for people and city records, with CRUD operations and Brazilian CPF and CNPJ validation.",
     },
     solution: {
-      pt: "Separei em camadas de verdade: Controllers finos que só orquestram, Services com a regra de negócio e Repositories para acesso a dados — todos atrás de interfaces e resolvidos por injeção de dependência. O EF Core com Migrations cuida do schema, e uma interface web simples consome a própria API para cadastro, consulta e relatórios.",
-      en: "I split it into real layers: thin Controllers that only orchestrate, Services holding the business rules and Repositories for data access — all behind interfaces and wired through dependency injection. EF Core with Migrations handles the schema, and a simple web UI consumes the API for registration, lookup and reports.",
+      pt: "Projeto pessoal para praticar C# e ASP.NET Core no cadastro, consulta, atualização e exclusão de pessoas e cidades. Inclui Entity Framework, banco NoSQL e regras de validação de CPF e CNPJ.",
+      en: "A personal project to practise C# and ASP.NET Core by creating, reading, updating and deleting people and city records. It includes Entity Framework, a NoSQL database and validation rules for Brazilian CPF and CNPJ identifiers.",
+    },
+  },
+  {
+    slug: "motai",
+    name: "Motai",
+    featured: true,
+    year: "2026",
+    team: true,
+    context: {
+      pt: "FIAP · Oracle · Em desenvolvimento",
+      en: "FIAP · Oracle · In development",
+    },
+    stack: ["React", "C#", ".NET", "Oracle Database"],
+    tagline: {
+      pt: "Projeto do Challenge FIAP com a Oracle, em desenvolvimento, com participação no back-end em dupla.",
+      en: "An ongoing FIAP Challenge project with Oracle, where I am working on the back-end with a teammate.",
+    },
+    solution: {
+      pt: "Aplicação acadêmica para o setor farmacêutico, com React na interface, C# e .NET no back-end e Oracle Database no banco de dados.",
+      en: "An academic application for the pharmaceutical sector, using React for the interface, C# and .NET for the back-end, and Oracle Database for data storage.",
+    },
+    contribution: {
+      pt: "Estou desenvolvendo o back-end com outro integrante da equipe, praticando C# e .NET durante o desafio.",
+      en: "I am developing the back-end with another team member, practising C# and .NET during the challenge.",
     },
     result: {
-      pt: "Um exemplo prático de Clean Architecture e SOLID em .NET: dá para testar a regra de negócio sem banco e trocar a persistência sem tocar no resto.",
-      en: "A hands-on example of Clean Architecture and SOLID in .NET: business rules can be tested without a database, and persistence can be swapped without touching the rest.",
+      pt: "Em desenvolvimento durante o Challenge de 2026.",
+      en: "In development during the 2026 Challenge.",
+    },
+  },
+  {
+    slug: "softco",
+    name: "SoftCo",
+    featured: true,
+    year: "2024",
+    team: true,
+    context: {
+      pt: "FIAP · SoftTech",
+      en: "FIAP · SoftTech",
+    },
+    stack: ["React", "Java", "Google Gemini"],
+    repo: "https://github.com/AdriYNishimoto/Softco_React",
+    tagline: {
+      pt: "Projeto acadêmico de suporte técnico com triagem de solicitações e participação principalmente no front-end.",
+      en: "An academic technical support project with request triage, where I contributed mainly to the front-end.",
+    },
+    solution: {
+      pt: "Desenvolvido em equipe no desafio FIAP com a SoftTech. O projeto combina uma interface em React, back-end em Java e Google Gemini para apoiar a triagem de solicitações de suporte.",
+      en: "Developed as a team for the FIAP challenge with SoftTech. The project combines a React interface, a Java back-end and Google Gemini to support the triage of support requests.",
+    },
+    contribution: {
+      pt: "Minha participação foi principalmente no desenvolvimento do front-end em React.",
+      en: "My contribution was mainly developing the React front-end.",
+    },
+  },
+  {
+    slug: "merchantflow",
+    name: "MerchantFlow",
+    featured: false,
+    year: "2026",
+    team: false,
+    stack: ["Python", "Django", "Django REST Framework", "SQLite"],
+    repo: "https://github.com/AdriYNishimoto/MerchantFlow",
+    tagline: {
+      pt: "Projeto de API para cadastro de estabelecimentos e acompanhamento de etapas de aprovação.",
+      en: "An API project for merchant registration and tracking approval stages.",
+    },
+    solution: {
+      pt: "Prática de desenvolvimento com Python e Django para registrar estabelecimentos, validar mudanças de status e consultar o histórico dessas alterações.",
+      en: "A Python and Django practice project for registering merchants, validating status changes and viewing their history.",
+    },
+  },
+  {
+    slug: "api-produtos",
+    name: "ApiProdutos",
+    featured: false,
+    year: "2025",
+    team: false,
+    stack: ["C#", "ASP.NET Core", "EF Core", "SQL Server", "JWT", "Swagger"],
+    repo: "https://github.com/AdriYNishimoto/ApiProdutos",
+    tagline: {
+      pt: "API de produtos para praticar ASP.NET Core, autenticação e acesso a dados.",
+      en: "A product API for practising ASP.NET Core, authentication and data access.",
+    },
+    solution: {
+      pt: "Projeto de estudo com Entity Framework Core, autenticação JWT, validação de dados, tratamento de erros e documentação no Swagger.",
+      en: "A practice project with Entity Framework Core, JWT authentication, data validation, error handling and Swagger documentation.",
     },
   },
   {
     slug: "digicoin",
     name: "Digicoin",
-    featured: true,
+    featured: false,
     year: "2025",
     team: true,
     context: {
@@ -114,46 +144,16 @@ export const projects: Project[] = [
     stack: ["Python", "Django", "Django REST Framework", "Celery", "PostgreSQL", "JavaScript"],
     repo: "https://github.com/AdriYNishimoto/Digicoin",
     tagline: {
-      pt: "Sistema gamificado de engajamento de colaboradores, implantado e em uso interno na DIGIX.",
-      en: "A gamified employee engagement platform, deployed and in internal use at DIGIX.",
-    },
-    problem: {
-      pt: "A DIGIX queria premiar entregas e aumentar o engajamento dos colaboradores, mas acompanhar pontos, campanhas e recompensas na mão não escala — e sem ranking visível o incentivo perde a graça.",
-      en: "DIGIX wanted to reward delivery and raise employee engagement, but tracking points, campaigns and rewards by hand doesn't scale — and without a visible ranking the incentive loses its edge.",
+      pt: "Projeto em equipe de uma plataforma com desafios, moedas virtuais e recompensas.",
+      en: "A team project for a platform with challenges, virtual coins and rewards.",
     },
     solution: {
-      pt: "Plataforma web em Django e Django REST Framework onde colaboradores acumulam moedas digitais ao concluir desafios e campanhas e as trocam por recompensas reais, com ranking, notificações, histórico de saldo e painel administrativo.",
-      en: "A web platform on Django and Django REST Framework where employees earn digital coins by completing challenges and campaigns and exchange them for real rewards, with rankings, notifications, balance history and an admin panel.",
+      pt: "Plataforma web em Django com campanhas, ranking, histórico de saldo e painel administrativo.",
+      en: "A Django web platform with campaigns, rankings, balance history and an administration panel.",
     },
     contribution: {
-      pt: "Projeto em equipe, com fluxo Git de branches de feature e pull requests. Minhas entregas: a geração de relatórios em Excel (produtos mais vendidos e usuários com mais moedas), o sistema de ranking — o top 7 e a posição do usuário logado — e a padronização dos popups da interface.",
-      en: "A team project with a proper Git flow of feature branches and pull requests. What I shipped: the Excel report generation (best-selling products and users with the most coins), the ranking system — the top 7 and the logged-in user's own position — and the standardisation of the interface popups.",
-    },
-    result: {
-      pt: "Implantado e em uso interno na DIGIX, com relatórios que a gestão usa para acompanhar a adesão ao programa.",
-      en: "Deployed and in internal use at DIGIX, with reports management relies on to track adoption of the programme.",
-    },
-  },
-
-  {
-    slug: "softco",
-    name: "SoftCo",
-    featured: false,
-    year: "2024",
-    team: true,
-    context: {
-      pt: "Soft Tech · desafio FIAP",
-      en: "Soft Tech · FIAP challenge",
-    },
-    stack: ["React", "Vite", "React Router", "Google Gemini"],
-    repo: "https://github.com/AdriYNishimoto/Softco_React",
-    tagline: {
-      pt: "Plataforma de suporte técnico que usa IA generativa para triar chamados e sugerir respostas.",
-      en: "Technical support platform that uses generative AI to triage tickets and suggest replies.",
-    },
-    solution: {
-      pt: "Desafio da Soft Tech. Na tela de análise, o chamado vai para o Google Gemini, que classifica a complexidade em nível 1 (dúvidas e procedimentos padrão) ou nível 2 (falhas técnicas que exigem investigação) e devolve categoria, justificativa e uma resposta pronta para o atendente revisar — reduzindo o tempo de atendimento. A chamada pede resposta em JSON estruturado e fica isolada num único módulo de serviço, justamente para migrar do navegador para um back-end sem tocar na interface. O front tem 12 telas roteadas entre área do usuário e painel administrativo.",
-      en: "A Soft Tech challenge. On the analysis screen the ticket goes to Google Gemini, which classifies complexity as level 1 (usage questions and standard procedures) or level 2 (technical failures needing investigation) and returns a category, a rationale and a ready-to-review reply for the agent — cutting response time. The call requests structured JSON and lives in a single service module, precisely so it can move from the browser to a back-end without touching the UI. The front-end covers 12 routed screens across the user area and admin panel.",
+      pt: "Participei dos relatórios em Excel, do ranking de usuários e da padronização dos popups da interface.",
+      en: "I contributed to Excel reports, user rankings and the standardisation of interface popups.",
     },
   },
   {
@@ -162,15 +162,15 @@ export const projects: Project[] = [
     featured: false,
     year: "2026",
     team: false,
-    stack: ["Python", "Tkinter", "Testes", "PyInstaller"],
+    stack: ["Python", "Tkinter", "PyInstaller"],
     repo: "https://github.com/AdriYNishimoto/PrintCalc3D",
     tagline: {
-      pt: "Calculadora de custo e lucro para impressão 3D — um produto de verdade, com executável.",
-      en: "A cost and profit calculator for 3D printing — a real product, shipped as an executable.",
+      pt: "Calculadora desktop para estimar custos e preços de impressão 3D.",
+      en: "A desktop calculator for estimating 3D printing costs and prices.",
     },
     solution: {
-      pt: "App desktop que calcula o custo real de uma peça impressa — filamento, energia, tempo de máquina e taxa de falha — e sugere o preço com a margem desejada. Separei em core (regras de cálculo), data (persistência) e ui, com testes na camada de cálculo e empacotamento em executável para Windows.",
-      en: "A desktop app that works out the real cost of a printed part — filament, power, machine time and failure rate — and suggests a price with the margin you want. Split into core (calculation rules), data (persistence) and ui, with tests on the calculation layer and packaged as a Windows executable.",
+      pt: "Projeto em Python que considera filamento, energia, tempo de máquina e margem desejada para estimar o preço de uma peça impressa.",
+      en: "A Python project that uses filament, energy, machine time and a chosen margin to estimate the price of a printed part.",
     },
   },
   {
@@ -182,12 +182,12 @@ export const projects: Project[] = [
     stack: ["JavaScript", "Three.js", "WebGL"],
     repo: "https://github.com/AdriYNishimoto/projeto_interacao3D",
     tagline: {
-      pt: "Visualizador de modelos 3D no navegador, com órbita e controle de iluminação.",
-      en: "An in-browser 3D model viewer with orbit controls and live lighting.",
+      pt: "Projeto para visualizar modelos 3D no navegador e experimentar controles de câmera e luz.",
+      en: "A project for viewing 3D models in the browser and experimenting with camera and lighting controls.",
     },
     solution: {
-      pt: "Carrega modelos .glb e .obj direto da máquina do usuário e permite rotacionar, dar zoom e ajustar a intensidade da luz em tempo real. Os modelos são centralizados e escalados automaticamente para caber na cena, independente do tamanho original.",
-      en: "Loads .glb and .obj models straight from the user's machine and lets you rotate, zoom and tune light intensity in real time. Models are automatically centred and scaled to fit the scene, whatever their original size.",
+      pt: "Prática com JavaScript e Three.js para carregar arquivos .glb e .obj, rotacionar modelos, ajustar o zoom e controlar a iluminação.",
+      en: "JavaScript and Three.js practice for loading .glb and .obj files, rotating models, zooming and adjusting lighting.",
     },
   },
   {
@@ -196,15 +196,15 @@ export const projects: Project[] = [
     featured: false,
     year: "2025",
     team: false,
-    stack: ["C#", ".NET", "PokeAPI", "OOP"],
+    stack: ["C#", ".NET", "PokeAPI"],
     repo: "https://github.com/AdriYNishimoto/TamagotchiPokemon",
     tagline: {
-      pt: "Um bichinho virtual em C# que consome a PokeAPI e evolui de verdade.",
-      en: "A virtual pet in C# that consumes the PokeAPI and actually evolves.",
+      pt: "Bichinho virtual no console para praticar C# e consumo de APIs.",
+      en: "A console virtual pet for practising C# and API consumption.",
     },
     solution: {
-      pt: "Aplicação de console que busca dados reais na PokeAPI — espécies, habilidades e cadeia de evolução — e simula o ciclo de vida do bichinho. Separei em Model, View e Controller para manter a lógica de domínio fora da interface e o consumo da API isolado num serviço.",
-      en: "A console application that pulls real data from the PokeAPI — species, abilities and evolution chains — and simulates the pet's lifecycle. Split into Model, View and Controller to keep domain logic out of the interface and API access isolated in a service.",
+      pt: "Projeto que consulta espécies, habilidades e evoluções na PokeAPI para simular o ciclo de vida de um bichinho virtual.",
+      en: "A project that queries species, abilities and evolutions from PokeAPI to simulate a virtual pet's lifecycle.",
     },
   },
 ];

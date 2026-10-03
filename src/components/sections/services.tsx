@@ -1,4 +1,4 @@
-import { Code2, Cpu, Server, Sparkles } from "lucide-react";
+import { Code2, Headset, Server, Sparkles } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Container, Section, SectionHeading } from "@/components/layout/section";
 import { Stagger, StaggerItem } from "@/components/motion/reveal";
@@ -9,7 +9,7 @@ export async function Services() {
   const services = [
     { Icon: Server, title: t("s1Title"), body: t("s1Body") },
     { Icon: Code2, title: t("s2Title"), body: t("s2Body") },
-    { Icon: Cpu, title: t("s3Title"), body: t("s3Body") },
+    { Icon: Headset, title: t("s3Title"), body: t("s3Body") },
     { Icon: Sparkles, title: t("s4Title"), body: t("s4Body") },
   ];
 

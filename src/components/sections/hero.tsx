@@ -44,7 +44,7 @@ export async function Hero() {
 
           <h1 className="mt-6 text-balance font-display text-4xl font-semibold leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-[3.75rem]">
             {t.rich("headline", {
-              hl: (chunks) => <span className="text-accent">{chunks}</span>,
+              hl: (chunks) => <span className="whitespace-nowrap text-accent">{chunks}</span>,
             })}
           </h1>
 

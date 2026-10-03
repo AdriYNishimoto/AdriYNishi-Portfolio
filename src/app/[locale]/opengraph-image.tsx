@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/config/site";
 import { routing } from "@/i18n/routing";
 
-export const alt = "Adriano Nishimoto — Back-end & Full Stack Developer";
+export const alt = "Adriano Nishimoto — Desenvolvimento back-end";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -74,7 +74,7 @@ export default async function OpengraphImage({
               color: "#a1a1aa",
             }}
           >
-            C#/.NET · Python · Node/React
+            Python · C#/.NET · React
           </div>
         </div>
 

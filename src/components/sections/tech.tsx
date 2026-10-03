@@ -1,8 +1,6 @@
 import {
   Braces,
-  Building2,
   Code2,
-  Cpu,
   Database,
   GitBranch,
   Server,
@@ -18,10 +16,8 @@ const icons = {
   code: Code2,
   server: Server,
   database: Database,
-  architecture: Building2,
-  devops: GitBranch,
-  ai: Sparkles,
-  data: Cpu,
+  tools: GitBranch,
+  practices: Sparkles,
 } satisfies Record<TechGroup["icon"], unknown>;
 
 function groupKey(id: string) {
@@ -45,7 +41,7 @@ export async function Tech() {
           description={t("description")}
         />
 
-        <Stagger className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Stagger className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {techGroups.map((group) => {
             const Icon = icons[group.icon];
             return (
@@ -61,9 +57,11 @@ export async function Tech() {
                     {group.items.map((item) => (
                       <li
                         key={item.name}
-                        className="flex items-baseline justify-between gap-3"
+                        className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1"
                       >
-                        <span className="text-sm text-muted">{item.name}</span>
+                        <span className="text-sm text-muted">
+                          {item.labelKey ? t(item.labelKey) : item.name}
+                        </span>
                         {item.level && (
                           <span className="shrink-0 font-mono text-[10px] uppercase tracking-wider text-subtle">
                             {t(levelKey(item.level))}

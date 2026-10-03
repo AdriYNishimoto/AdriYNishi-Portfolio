@@ -17,12 +17,12 @@ export function personJsonLd(locale: string, description: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Adriano Yudi R. Nishimoto",
+    name: "Adriano Yudi Ribas Nishimoto",
     alternateName: siteConfig.name,
     url: `${url}/${locale}`,
     image: `${url}${siteConfig.photo}`,
     email: `mailto:${siteConfig.email}`,
-    jobTitle: siteConfig.role,
+    jobTitle: locale === "en" ? "Early-career developer · Back-end" : siteConfig.role,
     description,
     address: {
       "@type": "PostalAddress",
@@ -31,7 +31,6 @@ export function personJsonLd(locale: string, description: string) {
       addressCountry: "BR",
     },
     alumniOf: [
-      { "@type": "CollegeOrUniversity", name: "FIAP" },
       { "@type": "EducationalOrganization", name: "SENAC Hub Academy" },
     ],
     knowsLanguage: ["pt-BR", "en", "es", "ja"],
