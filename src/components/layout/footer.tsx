@@ -2,6 +2,8 @@ import { getTranslations } from "next-intl/server";
 import { ArrowRight, Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons";
 import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/navigation";
+import { Logo } from "@/components/brand/logo";
 import { Container } from "./section";
 
 export async function Footer() {
@@ -21,9 +23,13 @@ export async function Footer() {
       <Container className="py-16">
         <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <p className="font-display text-lg font-semibold text-foreground">
-              {siteConfig.name}
-            </p>
+            <Link
+              href="/"
+              aria-label={siteConfig.name}
+              className="inline-flex min-h-11 items-center rounded-sm transition-opacity hover:opacity-80"
+            >
+              <Logo className="w-52" />
+            </Link>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               {t("tagline")}
             </p>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Nishimoto</title>
+  <rect width="64" height="64" rx="12" fill="#0a0a0b"/>
+  <g fill="#818cf8">
+    <path d="M13 12h5l33 33v7h-5L22 28v24h-9V12Z"/>
+    <path d="M42 12h9v29l-9-9V12Z"/>
+  </g>
+</svg>

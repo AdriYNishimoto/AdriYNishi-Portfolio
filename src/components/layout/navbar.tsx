@@ -37,21 +37,22 @@ export function Navbar() {
       )}
     >
       <nav
-        className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 sm:px-8"
+        className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-8"
         aria-label={t("openMenu")}
       >
         <Link
           href="/"
-          className="group flex items-center gap-2.5"
+          className="flex min-h-11 shrink-0 items-center rounded-sm transition-opacity hover:opacity-80"
           aria-label={siteConfig.name}
         >
-          <Logo className="size-7 text-foreground transition-colors group-hover:text-accent" />
-          <span className="hidden text-sm font-medium text-muted sm:inline">
-            {siteConfig.name}
-          </span>
+          <Logo
+            className="w-32 min-[360px]:w-[152px] sm:w-[184px] lg:w-52"
+            sizes="(max-width: 359px) 128px, (max-width: 639px) 152px, (max-width: 1023px) 184px, 208px"
+            preload
+          />
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.id}
@@ -63,7 +64,7 @@ export function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-0.5">
+        <div className="flex shrink-0 items-center gap-0.5">
           <LocaleToggle />
           <ThemeToggle />
           <a
@@ -80,7 +81,7 @@ export function Navbar() {
             href="#contact"
             className={cn(
               buttonVariants({ variant: "primary", size: "sm" }),
-              "ml-1.5 hidden md:inline-flex",
+              "ml-1.5 hidden lg:inline-flex",
             )}
           >
             {t("contact")}
@@ -90,7 +91,7 @@ export function Navbar() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? t("closeMenu") : t("openMenu")}
-            className="ml-1 inline-flex size-10 items-center justify-center rounded-md text-foreground hover:bg-surface-2 md:hidden"
+            className="ml-1 inline-flex size-10 items-center justify-center rounded-md text-foreground hover:bg-surface-2 lg:hidden"
           >
             {open ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
@@ -98,7 +99,7 @@ export function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-border bg-background md:hidden">
+        <div className="border-t border-border bg-background lg:hidden">
           <div className="space-y-1 px-6 py-4">
             {navItems.map((item) => (
               <a
